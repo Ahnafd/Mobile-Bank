@@ -4,8 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">  
 </head>
-<body>
-    <h1>Hello</h1>
+<body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+        <header>
+            <nav class="flex justify-around items-center">
+                <img class="w-16" src="images/Group.png" alt="">
+                <div>
+                    <h1 class="text-3xl font-bold">4000 Taka</h1>
+                    <p class="border rounded p-1">Available Balance</p>
+                </div>
+                <button class="btn">log out</button>
+            </nav>
+            <section class="mt-10">
+                <h1 class="">Welcome to Coz</h1>
+                <p>Easy and Low Charge Bangladesh's first Mobile Bank</p>
+            </section>
+            <div class="cards grid grid-cols-3 mt-14 gap-2 rounded-sm ">
+                <div class="box border-solid cursor-pointer border-black p-4 text-center sui">
+                    <img class="w-8 mx-auto" src="images/wallet 1.png" alt="">
+                <h3>Add Money</h3>
+                </div>
+                <div class="box border-solid cursor-pointer border-black p-4 text-center sui">
+                    <img class="w-8 mx-auto" src="images/send 1.png" alt="">
+                <h3>Cashout</h3>
+                </div>
+                <div class="box border-solid cursor-pointer border-black p-4 text-center sui">
+                    <img class="w-8 mx-auto" src="images/wallet 1.png" alt="">
+                <h3>Transfer Money</h3>
+                </div>
+                <div class="box border-solid cursor-pointer border-black p-4 text-center sui pb-9">
+                    <img class="w-8 mx-auto" src="images/financial 1.png" alt="">
+                <h3>Get Bonus</h3>
+                </div>
+                <div class="box border-solid cursor-pointer border-black p-4 text-center sui">
+                    <img class="w-8 mx-auto" src="images/purse 1.png" alt="">
+                <h3>Pay Bill</h3>
+                </div>
+                <div class="box border-solid cursor-pointer border-black p-4 text-center sui">
+                    <img class="w-8 mx-auto" src="images/Group (1).png" alt="">
+                <h3>Transactions</h3>
+                </div>
+            </div>
+            <section>
+                <h2>Add Money</h2>
+                <div class="">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                      <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
+                        
+                        <form class="card-body">
+                            <span class="label-text">Select A Bank</span>
+                            <select class="select select-bordered w-full max-w-xs">
+                                <option disabled selected>Select Bank</option>
+                                <option value="Bkash">Bkash</option>
+                                <option value="Nagad">Nagad</option>
+                                <option value="Rocket">Rocket</option>
+                                <option value="Paytm">Paytm</option>
+                              </select>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Bank Account Number</span>
+                            </label>
+                            <input type="number" placeholder="Enter 11 digit account number" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Amount to Add</span>
+                            </label>
+                            <input type="number" placeholder="Add Amount to withdraw" class="input input-bordered" required />
+                            <label class="label">
+                            </label>
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Pin Number</span>
+                            </label>
+                            <input type="password" placeholder="Enter 4 digit pin number" class="input input-bordered" required />
+                            <label class="label">
+                            </label>
+                          </div>
+                          <div class="form-control mt-6">
+                            <button class="btn btn-primary">Add Money</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+        </header>
+</section>
 </body>
 </html>
