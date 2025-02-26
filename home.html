@@ -14,7 +14,7 @@
             <nav class="flex justify-around items-center">
                 <img class="w-16" src="images/Group.png" alt="">
                 <div>
-                    <h1 class="text-3xl font-bold">4000 Taka</h1>
+                    <h1 class="text-3xl font-bold"><span id="main-balance">4000</span>Taka</h1>
                     <p class="border rounded p-1">Available Balance</p>
                 </div>
                 <button class="btn">log out</button>
@@ -64,30 +64,33 @@
                                 <option value="Rocket">Rocket</option>
                                 <option value="Paytm">Paytm</option>
                               </select>
-                          <div class="form-control">
+                              <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text">Amount to Add</span>
+                                </label>
+                                <input type="number" placeholder="Add Amount to withdraw" id="amount-handler" class="input input-bordered" required />
+                                <label class="label">
+                                </label>
+                              </div>
+                              <div class="form-control">
                             <label class="label">
                               <span class="label-text">Bank Account Number</span>
                             </label>
-                            <input type="number" placeholder="Enter 11 digit account number" class="input input-bordered" required />
+                            <input type="number" placeholder="Enter 11 digit account number" id="inner-account"
+                            class="input input-bordered" required />
                           </div>
-                          <div class="form-control">
-                            <label class="label">
-                              <span class="label-text">Amount to Add</span>
-                            </label>
-                            <input type="number" placeholder="Add Amount to withdraw" class="input input-bordered" required />
-                            <label class="label">
-                            </label>
-                          </div>
+                         
                           <div class="form-control">
                             <label class="label">
                               <span class="label-text">Pin Number</span>
                             </label>
-                            <input type="password" placeholder="Enter 4 digit pin number" class="input input-bordered" required />
+                            <input type="password" id="pinVer" placeholder="Enter 4 digit pin number" class="input input-bordered" required />
                             <label class="label">
                             </label>
                           </div>
                           <div class="form-control mt-6">
-                            <button class="btn btn-primary">Add Money</button>
+                            <button class="btn btn-primary 
+                            " id="btn-2">Add Money</button>
                           </div>
                         </form>
                       </div>
@@ -96,5 +99,9 @@
             </section>
         </header>
 </section>
+<script src="main.js"></script>
+<script>
+
+</script>
 </body>
 </html>
