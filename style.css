@@ -1,3 +1,9 @@
 .sui{
     border: 2px solid black;
 }
+.say{
+    margin-top: -50px;
+}
+*{
+    white-space: nowrap;
+}
